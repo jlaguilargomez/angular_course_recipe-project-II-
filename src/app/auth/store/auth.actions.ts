@@ -1,7 +1,9 @@
 import { Action } from '@ngrx/store';
 
-export const LOGIN = 'LOGIN';
-export const LOGOUT = 'LOGOUT';
+// export const LOGIN = 'LOGIN';
+// usamos la nomenclatura que aconseja la librería NgRX para no repetir identificadores:
+export const LOGIN = '[Auth] Login';
+export const LOGOUT = '[Auth] Logout';
 
 export class Login implements Action {
   readonly type = LOGIN;
