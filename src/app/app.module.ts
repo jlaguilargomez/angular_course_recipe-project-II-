@@ -16,11 +16,12 @@ import * as fromApp from './store/app.reducer';
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
+    // lo importamos del archivo 'app.reducer', que se encarga de gestionar y agrupar todos los REDUCERS de nuestro proyecto
     StoreModule.forRoot(fromApp.appReducer),
     SharedModule,
-    CoreModule
+    CoreModule,
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
   // providers: [LoggingService]
 })
 export class AppModule {}
